@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Giancarlo Franco">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+</head>
+<body>
+  <img class="Background-Image" src="./images/desktop-preview-background.jpg" alt="Background">
+  <main class="Float-Window">
+    <section class="Main-Container">
+      <picture>
+        <source media="(min-width: 700px)" srcset="./images/image-product-desktop.jpg">
+        <img src="./images/image-product-mobile.jpg" alt="Perfume">
+      </picture>
+      
+      <div class="Main-Container__Product-Info">
+
+        <header class="Main-Container__Header">
+          <h1 class="Product-Name Principal-Text">Gabrielle Essence Eau De Parfum</h1>
+
+          <p class="Product-Type Secondary-Text">PERFUME</p>
+        </header>
+
+        <p class="Secondary-Text Product-Description">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+
+        <footer class="Product-Sale">
+          <h2 class="Product-Price Principal-Text">$149.99</h2>
+
+          <p class="Product-Before-Price Secondary-Text">$169.99</p>
+
+          <button type="button" class="Buy-Button">
+            <img src="./images/icon-cart.svg" alt="Shopping cart">
+            <span>Add to Cart</span>
+          </button>
+        </footer>
+
+      </div>
+      
+    </section>
+  </main>
+</body>
+</html>
